@@ -95,7 +95,9 @@ const UpdateModal = ({ _id, name, description, price, image }) => {
         </DialogBody>
         <DialogFooter>
           <DialogActionTrigger asChild>
-            <Button variant="outline">Cancel</Button>
+            <Button variant="outline" onClick={() => setIsOpen(false)}>
+              Cancel
+            </Button>
           </DialogActionTrigger>
           <Button onClick={handleUpdateProduct}>Update</Button>
         </DialogFooter>
